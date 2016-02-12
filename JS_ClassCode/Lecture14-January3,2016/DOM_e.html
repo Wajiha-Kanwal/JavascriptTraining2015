@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+</head>
+<body>
+<div>
+    <p>Paragraph 0</p>
+
+    <p>Paragraph 2</p>
+</div>
+</body>
+<script>
+
+    var div = document.getElementsByTagName('div')[0];
+    var istChild = div.childNodes[1];
+    div.removeChild(istChild);
+
+
+//    var p = document.createElement('p');
+//    p.innerText = 'Paragraph 1';
+//    //p.createTextNode('Paragraph 1');
+//    p.setAttribute('id', 'para1');
+//
+////    var firstPara = document.getElementsByTagName('p')[1];
+////    div.insertBefore(p, firstPara)
+</script>
+</html>

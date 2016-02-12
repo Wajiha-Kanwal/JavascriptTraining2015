@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+<div id="container">
+
+</div>
+
+
+<script>
+    var fruits = ["Orange", "Apple", "Banana"];
+
+    var container = document.getElementById('container');
+
+    var html = '<select>';
+
+    for( var a = 0 ; a < fruits.length; a++)
+    {
+        html = html + ('<option>' + fruits[a] + '</option>');
+    }
+
+
+    html = html + ' </select>';
+
+    container.innerHTML = html;
+</script>
+
+</body>
+</html>

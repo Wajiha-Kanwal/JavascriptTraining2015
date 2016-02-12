@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lecture 4 - | CONCATENATING TEXT STRINGS | PROMPTS | IF STATEMENTS | COMPARISON OPERATORS | </title>
+    <script>
+
+        var str = "";
+        alert(typeof  str); //string
+
+
+        /** Concatenating Text Strings  **/
+
+        var str1 = "I am ";
+        var str2 = "Pakistani";
+        var combinedString =  str1 + str2;
+        document.write(combinedString); //I am Pakistani
+
+
+        var username = "Ali";
+        alert("Good Morning, " + "!");
+        alert("Good Morning, "+ username  + "!"); //Good Morning, Ali!
+
+        userName = "Sami";
+        alert("Thanks, " + userName + "!"); //Thanks, Sami!
+
+
+
+
+        /** Prompts  **/
+
+        var username = prompt("What is your name?");
+        alert("Hello, " + username);
+
+
+        var course = prompt('Which course are you enrolled in?');
+        alert(course);
+
+
+        /** an alternate way  **/
+        var course = window.prompt('Which course are you enrolled in?');
+        alert(course);
+
+
+        /** default input  **/
+        var course = window.prompt('Which course are you enrolled in?', 'MCC - Module A');
+        alert(course);
+
+        var email = prompt("Please enter your email address?", "abc@xyz.com");
+        document.write(email + "<br>");
+
+
+        /** prompt returns string type data **/
+        var userResponse = prompt("Please enter first number?");
+        alert(typeof userResponse);
+        document.write("userResponse is " + userResponse);
+        document.write("<br>");
+        document.write("Type of userResponse is " + typeof userResponse); //string
+        document.write("<br>");
+
+
+        /** parseInt / parseFloat methods **/
+
+        //Integer = 4
+        //Float = 2.44
+
+        var str = '52.5kgs';
+        var weight = parseInt(str); //52
+        alert(typeof weight); //number
+        var weight = parseFloat(str); //52.5
+        alert(typeof weight); //number
+
+
+        /** problem - prompt returns string type data **/
+        var num1 = prompt("Please enter first number?");
+        var num2 = prompt("Please enter second number?");
+        var sum = num1 + num2; //problem
+        document.write("Sum of two numbers is :" + sum); //wrong sum
+        document.write("<br>");
+
+
+        /** solution - parseInt / parseFloat  **/
+        var num1 = prompt("Please enter first number?");
+        num1 = parseInt(num1);
+        var num2 = prompt("Please enter second number?");
+        num2 = parseInt(num2);
+        var sum = num1 + num2;
+        document.write("Sum of two numbers is :" + sum);
+        document.write("<br>");
+
+
+
+
+        var username = "Ali";
+        var greeting = "Good Morning, ";
+        var banger   = "!";
+
+        var completeMessage = greeting + username + banger;
+        document.write(completeMessage);
+        document.write("<br>");
+
+
+        var result =  "2 plus 2 equals " + 2 + 2;  //22
+        document.write(result);
+        document.write("<br>");
+
+        var result =  "2 plus 2 equals " + (2 + 2); //4
+        document.write(result);
+        document.write("<br>");
+
+
+
+
+        /** boolean - a data type **/
+        /** possible values - true/false **/
+
+        var verified = true;
+        //var verified = false;
+        document.write(verified);
+        document.write("<br>");
+        document.write(typeof  verified);
+        document.write("<br>");
+
+
+
+        /** Conditional Statements - if statement **/
+
+
+        /*
+        if(condition)
+        {
+            //do this
+            //and this
+            //...
+        }
+        */
+
+
+
+        //  ==  -->  compares value
+        //  ===  -->  compares value and data type
+
+
+        var score = 100;
+        //var score = 89;
+        if (score === 100)
+        {
+            alert("Perfect Score.");
+            alert("Congratulations");
+        }
+        alert("result computed");
+
+
+
+
+        //    ==  // values on both sides are equal
+        //    !=  // values on both sides are not equal
+
+
+        //    ===  // values and types on both sides are equal
+        //    !==  // values and/or types on both sides are equal
+
+        alert(18 == "18"); //true
+        alert(18 != "18"); //false
+
+        alert(18 === "18"); //false
+        alert(18 === 18); //true
+        alert(18 !== "18"); //true
+
+
+
+        var score = 89;
+        if (score !== 100)
+        {
+            alert("Not a Perfect Score.");
+            alert("Try again");
+        }
+        alert("result computed");
+
+
+
+
+        var score = 0;
+        var userIQ;
+
+        var x = prompt("Where does the Pope live?");
+        var correctAnswer = "Vatican";
+
+        if (x == correctAnswer)
+        {
+            score++;
+            alert("Correct Answer");
+            userIQ = "genius";
+        }
+
+
+        if(score > 0){
+            alert("Congrats" + " " + userIQ );
+        }
+
+
+
+        /** Comparison Operators **/
+
+        /*
+
+         > is greater than                  //exclusive
+         < is less than                     //exclusive
+         >= is greater than or equal to     //inclusive
+         <= is less than or equal to        //inclusive
+         ==   values on both sides are equal
+         !=   values on both sides are not equal
+         ===  values and types on both sides are equal
+         !==  values and/or types on both sides are not equal
+
+         */
+
+
+        var age = 14;
+        if(age <= 18)
+        {
+            alert("You are under 18");
+        }
+
+        var age = 14;
+        if(age < 19)
+        {
+            alert("You are under 18");
+        }
+
+
+
+        var age  = 2;
+        //if(age > 2 && age < 10) // Exclusive for both
+        //if(age >= 2 && age < 10) //Inclusive for 2, Exclusive for 10
+        if(age >= 2 && age <= 10) //Inclusive for both, range is 2...10
+        {
+            alert("Welcome");
+        }
+
+
+
+
+        /** when no curly braces are used, first immediate statement is considered as it's in body of if statement **/
+        var sum = 40;
+        if(sum > 50)
+            alert("You've got a good score");
+        alert("done computing result");
+
+        /*
+        here,
+
+         alert("You've got a good score");
+
+         is same as
+
+         {
+            alert("You've got a good score");
+         }
+
+         */
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

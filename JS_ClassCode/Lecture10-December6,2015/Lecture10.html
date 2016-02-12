@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functions</title>
+    <script>
+//        var current = new Date();
+//        var hours   = current.getHours();
+//        var minutes = current.getMinutes();
+//        document.write("Current time: " + (hours + ":" + minutes));
+
+
+//        var country = "Pakistan";
+//        document.write(country);
+
+
+
+/*
+ function functionname(arg1, arg2, ..., argn) {
+ function body }
+ */
+
+//
+//        tellTime();
+//
+//        /*
+//            function declaration
+//         */
+//        function tellTime()
+//        {
+//            var current = new Date();
+//            var hours   = current.getHours();
+//            var minutes = current.getMinutes();
+//            document.write("Current time: " + (hours + ":" + minutes));
+//        }
+//
+//        /*
+//            function call
+//         */
+//
+//        tellTime();
+//
+//
+//
+//        //lots of code
+//
+//
+//
+//
+//
+//
+//        alert();
+//
+//        function alert()
+//        {
+//
+//        }
+
+//function with parameters
+
+
+
+//        function increment(num)
+//        {
+//            num++;
+//            document.write("<br>Number is " + num);
+//        }
+//
+//        increment(4);
+//
+//        increment(34);
+//
+//        increment(100);
+
+
+
+
+//        function add(num1 , num2) //parameters
+//        {
+//            var sum = num1 + num2;
+//            document.write("<br>Sum is " + sum);
+//        }
+//
+//        add(4 , 2); //arguments
+//
+//        add(56, 980);
+
+
+
+
+
+//        //function increment(num)
+//        function increment(num, num2)
+//        {
+//            //num++;
+//            document.write("<br>Number is " + num);
+//        }
+//
+//        //increment();
+//        increment(23);
+
+
+
+//        function increment(num)
+//        {
+//            num++;
+//            document.write("<br>Number is " + num);
+//        }
+//
+//        increment(4, 7, 9);
+
+
+
+function greetUser(username)
+{
+    document.write("<br>Welcome, " + username);
+}
+
+//greetUser();
+//greetUser("Sami");
+//greetUser("Sami", "Khan");
+
+
+//        greetUser("Ali");
+//
+//        //var name = "Ali";
+//        var name = prompt("What is your name?");
+//        greetUser(name);
+
+
+
+//        function getGrade(percentage)
+//        {
+//            if(percentage >= 80)
+//            {
+//                alert("A-one grade");
+//            }
+//            else if(percentage >= 70)
+//            {
+//                alert("A grade");
+//            }
+//            else if(percentage >= 60)
+//            {
+//                alert("B grade");
+//            }
+//
+//            return
+//        }
+//
+//
+//        //var percentage = parseInt(prompt("What is your percentage"));
+//        //getGrade(percentage);
+//        getGrade(82);
+
+
+function convertToUpperCase(str)
+{
+    var result = str.toUpperCase();
+    return result;
+}
+
+//    var uppercase = convertToUpperCase("ali khan");
+//    alert(uppercase);
+//
+//    document.write(convertToUpperCase("ali khan"));
+//
+//    console.log(convertToUpperCase("ali khan"));
+
+
+//        function add(num1 , num2) //parameters
+//        {
+//            var sum = num1 + num2;
+//            return sum;
+//        }
+//
+//        document.write("Sum is " + add(4, 6));
+
+
+
+//        function getGrade(percentage)
+//        {
+//            var grade;
+//            if(percentage >= 80)
+//            {
+//                grade = "A-one grade";
+//            }
+//            else if(percentage >= 70)
+//            {
+//                grade = "A grade";
+//            }
+//            else if(percentage >= 60)
+//            {
+//                grade = "B grade";
+//            }
+//            return grade;
+//        }
+//        alert(getGrade(89));
+//        document.write(getGrade(89));
+//        console.log(getGrade(89));
+//        var grade = getGrade(89);
+//
+
+
+
+//        function calcShippingCharges(amount)
+//        {
+//            return amount + 5;
+//        }
+//        //var res = 10 + calcShippingCharges(4); //19
+//
+//        if(calcShippingCharges(9) >= 10)
+//        {
+//            alert("Good");
+//        }
+
+
+//        function add (num1 , num2) //5, 1
+//        {
+//            return num1 + num2;
+//        }
+//
+//        function increment (num) //5
+//        {
+//            return add(num, 1); //6
+//        }
+//
+//        alert(increment(5));
+
+
+//        function sayHello()
+//        {
+//            return;
+//            alert("This will not execute ever");
+//            document.write("nor this");
+//        }
+//
+//        alert(sayHello());  //undefined
+
+
+
+
+//        function sayHello(num) //local variable
+//        {
+//            var message = "Hello"; //local variable- scope
+//        }
+//        alert(message);//not allowed
+//        alert(num); //not allowed
+
+
+//        var message = "Hi";     //global variable
+//        function sayHello(num)
+//        {
+//            alert(message);
+//        }
+//        alert(message);
+//        sayHello();
+
+
+
+//        var message = "Hi";
+//        function sayHello(num)
+//        {
+//            var message = "Hello";
+//            alert(message); //Hello
+//        }
+//        alert(message); //Hi
+//        sayHello();
+
+
+
+
+function sayHello(num)
+{
+    message = "Hello";
+    //alert(message);
+}
+
+
+
+sayHello();
+alert(message);
+
+
+//        alert(message);
+
+
+//        message = "Hello";
+//        alert(message);
+//        alert(window.message)
+
+
+//        function add()
+//        {
+//            console.log(arguments);
+//        }
+//
+//        add(); //0
+//        add(3); //1
+//        add(5,7); //2
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

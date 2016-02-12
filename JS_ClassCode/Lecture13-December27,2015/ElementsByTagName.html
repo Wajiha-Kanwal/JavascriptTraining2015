@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        p{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<p>This bed is too small.</p>
+<p>This bed is too big.</p>
+<p>This bed is just right.</p>
+<p>Another This bed is just right.</p>
+
+<input type="button" value="Change style">
+
+
+<script>
+
+
+    var allParagraphs = document.getElementsByTagName('p');
+
+
+    for( var i = 0 ; i < allParagraphs.length; i++)
+    {
+        allParagraphs[i].style.color = 'blue';
+    }
+
+
+
+    
+//    function change(){
+//        var allParagraphs = document.getElementsByTagName('p');
+//
+////        allParagraphs[0].style.color = 'blue';
+////        allParagraphs[3].style.color = 'blue';
+//
+//        for( var i = 0 ; i < allParagraphs.length; i++)
+//        {
+//            allParagraphs[i].style.color = 'blue';
+//        }
+//
+//
+////        console.log(allParagraphs);
+////
+////        for( var i = 0 ; i < allParagraphs.length; i++)
+////        {
+////            allParagraphs[i].style.fontSize = '50px';
+////        }
+//    }
+</script>
+
+</body>
+</html>

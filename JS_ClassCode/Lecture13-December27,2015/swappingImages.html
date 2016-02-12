@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swapping Images</title>
+</head>
+<body>
+<!--<img src="images/before-apple-iphone.jpg" onMouseover=" src='images/after-apple-iphone.jpg' "-->
+     <!--onMouseout=" src='images/before-apple-iphone.jpg' ">-->
+
+
+<!--<img id="before" src="images/before-apple-iphone.jpg" onmouseover="swapImage()" onmouseout="revertImage()">-->
+
+<!--<script>-->
+    <!--function swapImage(){-->
+        <!--document.getElementById('before').src = 'images/after-apple-iphone.jpg';-->
+    <!--}-->
+
+    <!--function revertImage(){-->
+        <!--document.getElementById('before').src = 'images/before-apple-iphone.jpg';-->
+    <!--}-->
+<!--</script>-->
+
+
+
+<img id="before" src="images/before-apple-iphone.jpg"
+     onmouseover="changeImage('before', 'images/after-apple-iphone.jpg')"
+     onmouseout="changeImage('before', 'images/before-apple-iphone.jpg')" >
+
+<script>
+    function changeImage(id, imagePath){
+        document.getElementById(id).src = imagePath;
+    }
+</script>
+</body>
+</html>

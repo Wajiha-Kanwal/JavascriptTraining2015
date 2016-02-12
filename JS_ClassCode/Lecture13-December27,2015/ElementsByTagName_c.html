@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!--<p>This bed is too small.</p>-->
+<!--<p>This bed is too big.</p>-->
+<!--<p>This bed is just right.</p>-->
+
+
+<!--<script>-->
+    <!--var allParagraphs = document.getElementsByTagName('p');-->
+
+    <!--//allParagraphs[1].innerText = "This is module A class";-->
+
+    <!--allParagraphs[1].innerHTML = '<input type="button" value="New Button">'-->
+
+
+    <!--alert(allParagraphs[1].innerHTML);-->
+<!--</script>-->
+
+
+
+<ul>
+    <li>Apple</li>
+    <li>Orange</li>
+    <li>Banana</li>
+</ul>
+
+<ul id="phones">
+    <li>Samsung</li>
+    <li>Apple</li>
+    <li>HTC</li>
+</ul>
+
+
+
+<script>
+    //var targetUL = document.getElementById('phones');
+
+    var targetUL = document.getElementsByTagName('ul')[1];
+
+    console.log(targetUL);
+    var allListItems = targetUL.getElementsByTagName('li');
+
+    for( var i = 0 ; i < allListItems.length; i++)
+    {
+        alert(allListItems[i].innerText);
+    }
+</script>
+
+
+
+
+
+</body>
+</html>

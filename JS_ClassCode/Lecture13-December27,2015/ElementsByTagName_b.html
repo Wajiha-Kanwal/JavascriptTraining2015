@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /*div p{*/
+            /*color: red;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<p>This bed is too small.</p>
+<div id="specialParagraphs">
+    <p>This bed is too big.</p>
+    <p>This bed is just right.</p>
+</div>
+<p>Another This bed is just right.</p>
+
+
+<script>
+    var divArea = document.getElementById('specialParagraphs');
+    var paragraphsOfDiv = divArea.getElementsByTagName('p');
+
+    for( var i = 0 ; i < paragraphsOfDiv.length; i++)
+    {
+        paragraphsOfDiv[i].style.color = 'red';
+    }
+</script>
+</body>
+</html>

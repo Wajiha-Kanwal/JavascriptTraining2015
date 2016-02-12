@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lecture 3 - Variables for Numbers, Math Expressions</title>
+    <script>
+        var num = 2;
+        var anotherNum = 3.2;
+
+        alert(num);
+        alert(anotherNum);
+        alert(num + 3);
+
+
+        /** add two numbers **/
+        var newNumber   = 4 + 3;
+        alert(newNumber);
+
+
+        /** add a number and a variable **/
+        var newNumber1  = num + 2;
+        alert(newNumber1);
+
+
+        /** add two variables **/
+        var newNumber2  = num + anotherNum;
+        alert(newNumber2);
+
+
+        /** add some value to a variable **/
+        num = num + 4;
+        alert(num);
+
+
+        var age = 19;
+        var newAge = age + 3;
+        alert(newAge);
+        alert(typeof age);
+
+        //var 2; //Not allowed
+        var two;
+
+
+
+
+        /** Math Expressions  **/
+
+        var num1 = 3;
+        var num2 = 10;
+
+        var addition = num1 + num2;
+        alert(addition);
+
+        var subtraction = num2 - num1;
+        alert(subtraction);
+
+        var multiplication = num1 * num2;
+        alert(multiplication);
+
+        var division = num2 / num1;
+        alert(division);
+
+        var remainder = 10 % 3;
+        alert(remainder);
+
+
+
+        /** Increment / Decrement Operators  **/
+
+        var count = 5;
+        var updatedCount = count + 1;
+
+        alert(updatedCount);
+        alert(count);
+
+
+        var age = 12;
+
+        /** alternate ways to increment a value  **/
+        age = age + 1;
+        age += 1;
+        age++; //increment operator
+
+
+        /** alternate ways to decrement a value  **/
+        age = age - 1;
+        age -= 1;
+        age--; //decrement operator
+
+
+        /** increment 3 numbers in a value  **/
+        age = age + 3;
+        age += 3;
+
+
+        var count = 19;
+        count--;
+        alert(count);
+        count--;
+        alert(count);
+
+
+        /** Post Increment & Pre Increment Operators  **/
+
+        var num = 2;
+        num++; //post increment operator
+        ++num; //pre increment operator
+
+
+        /** post increment in an expression  **/
+        var age     = 20;
+        var newAge  = age++;
+        alert(newAge);
+        alert(age);
+
+
+        /** pre increment in an expression  **/
+        var age     = 20;
+        var newAge  = ++age;
+        alert(newAge);
+        alert(age);
+
+
+
+
+        /** Eliminating Ambiguity  **/
+
+        // * / precedence same
+        // + - precedence same
+
+
+        /** Same precedence - Left to Right  **/
+        var result =  3 + 2 - 3;
+        alert(result); //2
+
+        /** Different precedence - BODMAS or Javascript precedence rules  **/
+        var result =  3 + 2 * 3;
+        alert(result); //9
+
+
+        /** to eliminate ambiguity or confusion, use brackets  **/
+        var result =  3 + (2 * 3);
+        alert(result); //9
+
+        var result =  (3 + 2) * 3;
+        alert(result); //15
+
+
+
+        var answer = 4 / 2 * 2;
+        alert(answer); //4
+        var answer = 4 / (2 * 2);
+        alert(answer); //1
+        var answer = (4 / 2) * 2;
+        alert(answer); //4
+
+        var answer = (2 * 4) * (4 + 2);
+        alert(answer);
+
+
+        /** Concatenation happens when you add a number and a string  **/
+
+        var age = "19";
+        age = age + 1;
+        alert(age); //191
+        alert(typeof age); //string
+
+
+        var birthYear = 1990;
+        var typeOfData = typeof birthYear;
+        document.write("My birth year is " + birthYear);
+        document.write("<br>");
+        document.write("Data Type of my declared variable is " + typeOfData);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

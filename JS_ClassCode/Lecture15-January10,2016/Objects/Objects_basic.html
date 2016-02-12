@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objects</title>
+    <script>
+//        [];
+//        new Array()
+
+
+
+       // var student1 = new Object();
+
+
+
+
+
+//    var student1 = {
+//        name        : "Ali",
+//        age         : 19,
+//        rollNumber : "ABC123"
+//    };
+
+
+//    var student2 = {
+//        name        : "Sami",
+//        age         : 21,
+//        rollNumber : "B456"
+//    };
+
+
+//        var plan1 = {
+//            name            : "Basic",
+//            price           : 3.99,
+//            space           : "100 gb",
+//            data            : "1000 gb/mo",
+//            pages           : 10,
+//            discountMonth   : ["JAN", "JUN", "SEP"]
+//        };
+//
+//        document.write(plan1.name);
+//        document.write("<br>");
+//        document.write(plan1.data);
+
+
+
+
+
+//        document.write(plan1.price);
+//
+//        plan1.price = 5.00;
+//
+//        document.write("<br>");
+//        document.write(plan1.price);
+
+
+//        var plan1 = {
+//            name            : "Basic",
+//            price           : 3.99,
+//            space           : "100 gb",
+//            data            : "1000 gb/mo",
+//            pages           : 10,
+//            discountMonth   : ["JAN", "JUN", "SEP"],
+//            isActive        : true,
+//            currentMonth    : undefined
+//        };
+
+        //plan1.discountMonth[2]; //SEP
+
+
+//        var plan1 = {
+//            name            : "Basic",
+//            price           : 3.99,
+//            space           : "100 gb",
+//            data            : "1000 gb/mo",
+//            pages           : 10,
+//            discountMonth   : ["JAN", "JUN", "SEP"],
+//            isActive        : true
+//        };
+
+        //plan1.currentMonth = "JUL";
+
+//        plan1.name;
+//        plan1["name"];
+//        plan1["price"];
+//        plan1["data"];
+//        plan1["discountMonth"][2];
+
+
+//        var plan1 = {
+//            name            : "Basic",
+//            price           : 3.99,
+//            data            : "1000 gb/mo",
+//            pages           : 10,
+//            discountMonth   : ["JAN", "JUN", "SEP"],
+//            isActive        : true,
+//            abc             : {
+//                xyz : "xyz value"
+//            }
+//        };
+
+//        var propExists =  "pages" in plan1;
+//        alert(propExists);
+
+            //"xyz" in plan1.abc;
+
+//        console.log(plan1);
+//        delete plan1.space;
+//        console.log(plan1);
+
+
+
+//        var student2 = {
+//            name            : "Sami",
+//            age             : 21,
+//            rollNumber      : "B456",
+//            admissionYear   : 2014,
+//            getYears        : function (){
+//                var today       = new Date();
+//                var currentYear = today.getFullYear();
+//                return currentYear - student2.admissionYear;
+//            }
+//        };
+
+//        document.write("Years : " + student2.getYears());
+
+
+//        Math.random();
+//        arr.splice();
+//        document.write();
+
+
+//    var student2 = {
+//        name            : "Sami",
+//        age             : 21,
+//        rollNumber      : "B456",
+//        admissionYear   : 2014,
+//        yearDuplicate   : this.admissionYear,
+//        getYears        : function (){
+//            var today       = new Date();
+//            var currentYear = today.getFullYear();
+//            //return currentYear - student2.admissionYear;
+//            return currentYear - this.admissionYear;
+//        }
+//    };
+
+
+
+
+//    var student1 = {
+//        name        : "Ali",
+//        age         : 19,
+//        rollNumber : "ABC123"
+//    };
+
+
+
+//var plan1 = {
+//    name            : "Basic",
+//    price           : 3.99,
+//    data            : "1000 gb/mo",
+//    pages           : 10
+//};
+//
+//var plan2 = {
+//    name            : "Pro",
+//    price           : 3.99,
+//    data            : "1000 gb/mo",
+//    pages           : 10
+//};
+//
+//var plan3 = {
+//    name            : "Ultimate",
+//    price           : 3.99,
+//    data            : "1000 gb/mo",
+//    pages           : 10
+//};
+
+
+//        function Plan(naam, paisay, samaan, safhat){
+//            this.name   = naam;
+//            this.price  = paisay;
+//            this.data   = samaan;
+//            this.pages  = safhat;
+//        }
+//
+//        var plan1 = new Plan("Basic", 3.99, "1000 gb/mo", 10);
+//        var plan2 = new Plan("Basic", 3.99, "1000 gb/mo", 10);
+
+
+        //var plan2 = new Plan("Pro", 4.99, "2000 gb/mo", 15);
+
+        //plan2.price; //4.99
+
+
+
+//function Plan(naam, paisay, samaan, safhat){
+//    this.name   = naam;
+//    this.price  = paisay;
+//    this.data   = samaan;
+//    this.pages  = safhat;
+//}
+
+//var plan1 = new Plan("Basic", 3.99, "1000 gb/mo", 10);
+//var plan2 = new Plan("Basic", 3.99, "1000 gb/mo", 10);
+//
+//        if( plan1.name == plan2.name ){
+//            alert("values are same");
+//        }
+//        else{
+//            alert("Not same")
+//        }
+
+
+
+    function Plan(naam, paisay, samaan, safhat, saal){
+        this.name       = naam;
+        this.price      = paisay;
+        this.data       = samaan;
+        this.pages      = safhat;
+        this.regYear    = saal;
+        this.getYears   = function (){
+            var today       = new Date();
+            var currentYear = today.getFullYear();
+            return currentYear - this.regYear;
+        }
+    }
+//
+//    var plan1 = new Plan("Basic", 3.99, "1000 gb/mo", 10, 2000);
+//    var plan2 = new Plan("Pro", 4.99, "2000 gb/mo", 15, 2010);
+//
+//        document.write(plan1.getYears());
+//        document.write(plan2.getYears());
+
+
+
+    function Plan(naam, paisay, samaan, safhat, saal){
+        this.name       = naam;
+        this.price      = paisay;
+        this.data       = samaan;
+        this.pages      = safhat;
+        this.regYear    = saal;
+        this.category = "Broadband";
+
+    }
+
+//Plan.prototype.category = "Broadband";
+//
+//
+//        Plan.prototype.getYears   = function (abc){
+//            alert(abc)
+//            var today       = new Date();
+//            var currentYear = today.getFullYear();
+//            return currentYear - this.regYear;
+//        }
+
+//function Plan(naam, paisay, samaan, safhat, saal){
+//    this.name       = naam;
+//    this.price      = paisay;
+//    this.data       = samaan;
+//    this.pages      = safhat;
+//    this.regYear    = saal;
+//
+//}
+//
+//Plan.prototype.getYears   = function (){
+//    var today       = new Date();
+//    var currentYear = today.getFullYear();
+//    return currentYear - this.regYear;
+//}
+//
+//    var plan1 = new Plan("Basic", 3.99, "1000 gb/mo", 10, 2000);
+//    var plan2 = new Plan("Pro", 4.99, "2000 gb/mo", 15, 2010);
+
+
+//
+//Math.prototype.subtract = function (a,b){
+//    return a-b;
+//}
+
+//
+//    function Plan(naam, paisay, samaan, safhat, saal){
+//        this.name       = naam;
+//        this.price      = paisay;
+//        this.data       = samaan;
+//        this.pages      = safhat;
+//        this.regYear    = saal;
+//    }
+//
+//Plan.prototype.getYears   = function (){
+//    var today       = new Date();
+//    var currentYear = today.getFullYear();
+//    return currentYear - this.regYear;
+//}
+//
+//    var plan1 = new Plan("Basic", 3.99, "1000 gb/mo", 10, 2000);
+////       var propExists =  "price" in plan1;
+////       var propExists =  "data" in plan1;
+//       var propExists =  "getYears" in plan1; //true
+//        alert(propExists);
+
+
+
+//function Plan(naam, paisay, samaan, safhat, saal){
+//    this.name       = naam;
+//    this.price      = paisay;
+//    this.data       = samaan;
+//    this.pages      = safhat;
+//    this.regYear    = saal;
+//}
+//
+//var plan1 = new Plan("Basic", 3.99, "1000 gb/mo", 10, 2000);
+//
+//
+//        for ( p in plan1)
+//        {
+//            document.write(p + " : " + plan1[p] + "<br>");
+//        }
+
+
+function Plan(naam, paisay, samaan, safhat, saal){
+    this.name       = naam;
+    this.price      = paisay;
+    this.data       = samaan;
+    this.pages      = safhat;
+    this.regYear    = saal;
+}
+
+Plan.prototype.getYears   = function (){
+    var today       = new Date();
+    var currentYear = today.getFullYear();
+    return currentYear - this.regYear;
+}
+
+var plan1 = new Plan("Basic", 3.99, "1000 gb/mo", 10, 2000);
+
+        var exists = "getYears" in plan1;
+        alert(exists);
+
+        var exists = plan1.hasOwnProperty("getYears");
+        alert(exists);
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Links</title>
+    <style>
+        /*.enlarge{*/
+            /*font-size: 50px;*/
+            /*color: steelblue;*/
+        /*}*/
+
+
+        #container{
+            width: 50%;
+        }
+
+
+    </style>
+</head>
+<body>
+<!--<a id="prev" href="PreDOM.html">Go to previous exercise</a>-->
+
+<!--<input type="button" value="get href" onclick="getHREF()">-->
+
+<!--<script>-->
+    <!--function getHREF(){-->
+        <!--console.log("address is " + document.getElementById('prev').href);-->
+    <!--}-->
+<!--</script>-->
+
+
+<!--<form id="userForm">-->
+    <!--<label>Username</label>-->
+    <!--<input type="text">-->
+    <!--<br>-->
+    <!--<label>Password</label>-->
+    <!--<input type="password">-->
+    <!--<input type="submit" value="submit">-->
+<!--</form>-->
+
+<!--<input type="button" value="ENLARGE FORM" onclick="enlargeForm()">-->
+
+
+<!--<script>-->
+    <!--function enlargeForm(){-->
+        <!--document.getElementById('userForm').className = 'enlarge';-->
+    <!--}-->
+<!--</script>-->
+
+<div id="container">
+    <p id="para" onclick="setMargin()">The quick brown fox jumps over the lazy dog</p>
+</div>
+
+
+<script>
+    function makeBig(){
+        document.getElementById('para').style.fontSize = '50px';
+    }
+
+
+    //document.getElementById("pic99").style.cssFloat = "left";
+
+
+    function makeHidden(){
+        document.getElementById("para").style.visibility = "hidden";
+    }
+
+    function setMargin(){
+        document.getElementById("container").style.margin = "0 30px 0 30px";
+    }
+</script>
+
+
+</body>
+</html>

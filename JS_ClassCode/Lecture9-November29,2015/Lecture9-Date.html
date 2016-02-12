@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lecture 9 - Date methods</title>
+    <script>
+
+        /** Get Current Date **/
+
+        var rightNow = new Date();
+        document.write(rightNow + "<br>");
+
+
+        document.write(rightNow.getDate() + "<br>");
+        document.write(rightNow.getMonth() + "<br>");
+        document.write(rightNow.getHours() + ":" + rightNow.getMinutes() + ":" + rightNow.getSeconds() + "<br>");
+        document.write(rightNow.getHours() + "hrs , " + rightNow.getMinutes() + " minutes<br>");
+        document.write(rightNow.getFullYear() + "<br>");
+        document.write(rightNow.getSeconds() + "<br>");
+        document.write(rightNow.getMilliseconds() + "<br>");
+
+
+        /** Get Time - milliseconds from January 1, 1970 **/
+
+        document.write(rightNow.getTime() + "<br>");
+
+
+
+        /** Get Current Day **/
+
+        //document.write(rightNow.getDay() + "<br>");
+
+        //var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+        //document.write(days[rightNow.getDay()] + "<br>");
+
+
+
+        /** Set Date **/
+
+        //var myBirthday = new Date("June 30, 2015");
+        //document.write(myBirthday);
+        //var myBirthday = new Date("June 30, 2015 17:33:40");
+        //document.write(myBirthday);
+
+
+        var myBirthday = new Date();
+        document.write(myBirthday + "<br>");
+        myBirthday.setDate(15);
+        document.write(myBirthday + "<br>");
+        myBirthday.setMonth(6);
+        document.write(myBirthday + "<br>");
+        myBirthday.setFullYear(2036);
+        document.write(myBirthday + "<br>");
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

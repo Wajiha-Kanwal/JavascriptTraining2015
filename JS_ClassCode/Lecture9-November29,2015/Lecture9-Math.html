@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lecture 9 - Math methods & type conversions </title>
+    <script>
+        // -3, -2, -1, 0 , 1 , 2 ,3
+
+        //.5 or greater === next
+        //else same
+
+
+
+        /** round off, floor & ceil **/
+
+        var num = 0.562;
+
+        document.write(num + "<br>");
+        document.write("Round Off " + Math.round(num) + "<br>");    //1
+        document.write("Floor " + Math.floor(num) + "<br>");        //0
+        document.write("Ceil " + Math.ceil(num) + "<br><br>");      //1
+
+
+        var num = -2.25;
+        document.write(num + "<br>");
+        document.write("Round Off " + Math.round(num) + "<br>");    //-2
+        document.write("Floor " + Math.floor(num) + "<br>");        //-3
+        document.write("Ceil " + Math.ceil(num) + "<br><br>");      //-2
+
+
+
+        /** random number generation **/
+
+        var random = Math.random() * 6;
+        random = Math.ceil(random);
+        //random = Math.floor(random) + 1;
+        document.write("random dice value: " + random);
+        document.write("<br><br>");
+
+
+
+        var randomNumber = Math.random() * 2;
+        randomNumber = Math.ceil(randomNumber);
+        //randomNumber = Math.floor(randomNumber) + 1;
+        document.write(randomNumber);
+        document.write("<br>");
+
+        var coin = randomNumber === 1 ? "Tails" : "Heads";
+        document.write("random coin value: " + coin);
+        document.write("<br><br>");
+
+        /*
+             if (randomNumber == 1)
+             {
+                 coin = "Tails";
+             }
+             else
+             {
+                 coin = "Heads";
+             }
+        */
+
+
+
+        /** Converting strings to integers and decimals **/
+
+        var currentAge                  = prompt("What is your current age?"); //"20abc"
+        var yearsBeingEligibleToVote    = currentAge - 18;
+        document.write(yearsBeingEligibleToVote);
+        document.write("<br><br>");
+
+
+
+        //        var sum = 4 / "2";
+        //        document.write(sum);
+
+
+        //        parseInt("2.4abc"); //2
+        //        parseFloat("2.4abc"); //2.4
+        //        alert(parseFloat("abc12.6")); //NaN
+
+
+
+
+        var currentAge = parseInt(prompt("What is your current age?"));
+        //var currentAge = parseFloat(prompt("What is your current age?"));
+        var yearsBeingEligibleToVote = currentAge - 18;
+        document.write(yearsBeingEligibleToVote);
+        document.write("<br><br>");
+
+
+        /** Converting strings to numbers **/
+
+//        var str = "12abc";
+//        document.write(typeof str + "<br>");
+//        str = Number(str);
+//        document.write(typeof str + "<br>");
+//        document.write(str);
+
+
+
+        /** Converting numbers to strings **/
+
+//        var num = 1.234;
+//        document.write(typeof num + "<br>");
+//        num = num.toString();
+//        document.write(typeof num + "<br>");
+
+
+
+        /** Controlling the length of decimals **/
+
+
+        var totalCost = 3000.23465881199;
+        document.write("<br><br>");
+        document.write(totalCost + "<br>");
+        document.write(totalCost.toFixed(2));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
